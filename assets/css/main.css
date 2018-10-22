@@ -545,7 +545,7 @@ text-transform: uppercase;
 	overflow: hidden;
 	position: relative;
 	height: 560px;
-	width: 50%;
+	width: 100%;
 }
 .grid-post.nr-2.style-1 {
 	height: 280px;
