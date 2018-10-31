@@ -19,19 +19,6 @@
         <!-- Modernizr JS -->
         <script src="assets/js/modernizr-3.5.0.min.js"></script>
         <!--favincon-->
-        <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
         <link rel="manifest" href="assets/images/favicon/manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
@@ -52,6 +39,7 @@
                 </div>
             </div>
         </div>
+
         <div id="wrapper">
         <div id="page-content-wrapper">
         <div class="container-fluid">
@@ -59,7 +47,6 @@
                 <div class="top_bar margin-15">
                     <div class="row">
                         <div class="col-md-6 col-sm-12 time">
-                            <!-- <div class="off-canvas-toggle" id="off-canvas-toggle"><span></span><p class="sidebar-open">MORE</p></div> -->
                             <div style="display: inline-block;border-right: 1px solid black;padding-right: 10px;"><i class="fa fa-clock-o"></i><span>&nbsp;&nbsp;&nbsp;Friday, 5 January 2018</span></div>
                         </div>
                         <div class="col-md-6 col-sm-12 social">
@@ -101,29 +88,29 @@
                     <div class="row">
                         <div class="col-12 col-md-12 main_nav_cover" id="nav">
                             <ul id="main-menu">
-                                <li><a href="#">Home</a></li>
+                                <li><a href="home.html">Home</a></li>
                                 <li class="menu-item-has-children">
                                     <a href="#">Events</a>
                                     <ul class="full-width-sub-menu sub-menu">
                                         <div class="row">
-                                            <div class="col-md-3 col-sm-6">
+                                            <div class="col-xs-6 col-md-3 col-sm-4">
                                                 <a href="http://mc.ishaanrawat.com/faculty-interaction/">
-                                                <img src="assets/images/What-I-Made.png" alt="">
+                                                <img src="assets/images/What-I-Made.png" alt=""><br>
                                                 What I Made</a>
                                             </div>
-                                            <div class="col-md-3 col-sm-6">
+                                            <div class="col-xs-6 col-md-3 col-sm-4">
                                                 <a href="http://mc.ishaanrawat.com/faculty-interaction/">
-                                                <img src="assets/images/Faculty-Interaction.png" alt="">
+                                                <img src="assets/images/Faculty-Interaction.png" alt=""><br>
                                                 Faculty Interaction</a>
                                             </div>
-                                            <div class="col-md-3 col-sm-6">
+                                            <div class="col-xs-6 col-md-3 col-sm-4">
                                                 <a href="http://mc.ishaanrawat.com/faculty-interaction/">
-                                                <img src="assets/images/TEDxLNMIIT.png" alt="">
+                                                <img src="assets/images/TEDxLNMIIT.png" alt=""><br>
                                                 TEDxLNMIIT</a>
                                             </div>
-                                            <div class="col-md-3 col-sm-6">
-                                                <a href="http://mc.ishaanrawat.com/faculty-interaction/">
-                                                <img src="assets/images/Duologue.png" alt="">
+                                            <div class="col-xs-6 col-md-3 col-sm-4">
+                                                <a href="duologue.html">
+                                                <img src="assets/images/Duologue.png" alt=""><br>
                                                 Duologue</a>
                                             </div>
                                         </div>
@@ -133,22 +120,21 @@
                                 <li class="menu-item-has-children">
                                     <a href="#">About Us</a>
                                     <ul class="sub-menu">
-                                        <li><a href="category-list.html">Ethos</a></li>
-                                        <li><a href="category-grid.html">Roles</a></li>
-                                        <li><a href="Coordinators.html">Coordinators</a></li>
-                                        <li><a href="category-big.html">Members</a></li>
+                                        <li><a href="ethos.html">Ethos</a></li>
+                                        <li><a href="members.html">Members</a></li>
+                                        <li><a href="founders.html">Founders</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="GetInvolved.html">Get Involved</a></li>
+                                <li><a href="getinvolved.html" onclick="involvefun();" id="butinvolve">Get Involved</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="container animate-box">
-                <div class="grid-wrap nr-1 section_margin">
+        <div class="container-fluid" id="resultinvolve">
+            <div class="container animate-box" id="next">
+                <div class="grid-wrap nr-1 section_margin" id="cover">
                     <div class="grid-post">
                         <div class="wrap">
                             <div class="altpost-image">
@@ -161,8 +147,8 @@
                     <div class="container">
                         <div class="primary margin-15">
                             <div class="row">
-                                <div class="col-md-8">
-                                    <div class="post_list post_list_style_1">
+                                <div class="col-md-8" id="result">
+                                    <div class="post_list post_list_style_1" id="home">
                                         <div class="alith_heading">
                                             <h2 class="alith_heading_patern_2">Recent Updates</h2>
                                         </div>
@@ -220,7 +206,7 @@
                                               <img class="card-img" src="assets\images\bgimg.png" alt="Card image">
                                               <div class="card-img-overlay">
                                               <h5 class="card-title">Science & Technology</h5>
-                                              <a href="#" class="card-link">View Clubs</a>
+                                              <a href="/" class="card-link" onclick="myfun();" id="buttech">View Clubs</a>
                                               </div>
                                           </div><br>
                                               <div class="card" style="max-width: 21rem;">
@@ -253,6 +239,7 @@
                                           </div>
                                         </div>
                                     </div>
+                                </aside>
                                     <!--.sidebar-widget-->
                             </div>
                         </div>
@@ -260,7 +247,7 @@
                     </div>
                 </div>
 
-                                    </div
+            </div>
                                         </div>
                 <!-- Footer -->
 <footer class="page-footer font-small blue pt-4 container">
@@ -308,7 +295,7 @@
                 </div>
             </div>
             <!--page-content-wrapper-->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="assets/js/jquery.min.1.7.js"></script>
             <script src="assets/js/owl.carousel.min.js"></script>
             <script src="assets/js/jquery.waypoints.min.js"></script>
             <script src="assets/js/jquery.slicknav.min.js"></script>
@@ -317,7 +304,25 @@
             <script src="assets/js/main.js"></script>
             <script src="assets/js/smart-sticky.js"></script>
             <script src="assets/js/theia-sticky-sidebar.js"></script>
+            <script type="text/javascript">
+                function myfun(){
+                    jQuery("#buttech").click(function(){
+                        console.log("hi");
+                	       jQuery('#result').load('tech.html #tech');
+                jQuery("#home").hide();
+     jQuery("#cover").hide();
+                    });
+                };
+                function involvefun(){
+                    jQuery("#butinvolve").click(function(){
+                        console.log("hi");
+                	       jQuery('#resultinvolve').load('involve.html #getinvolved');
+                jQuery("#next").hide();
+                    });
+                };
+            </script>
         </div>
+    </div>
         <!--#wrapper-->
     </body>
 </html>
