@@ -1930,3 +1930,22 @@ form p {
 	border-bottom: 1px solid #eee;
 	padding-bottom: 30px;
 }
+
+#recupdate2{
+	display: none;
+}
+#recupdate3{
+	display: none;
+}
+#recupdate4{
+	display: none;
+}
+#recpost2{
+	display: none;
+}
+#recpost3{
+	display: none;
+}
+#recpost4{
+	display: none;
+}
